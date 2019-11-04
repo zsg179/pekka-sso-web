@@ -25,7 +25,7 @@
 	
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="pekka-sso-web"/>
-	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"/>	
+	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181" file = "ssoweb.properties"/>	
 	<dubbo:reference interface="com.pekka.sso.service.UserService" id="userService" />	
 
 	
